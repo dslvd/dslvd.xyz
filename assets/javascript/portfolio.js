@@ -28,17 +28,17 @@ $(document).ready(() => {
 
         link = $('#marquee').children('a').last();
 
-        if (i != links.length - 1) $('#marquee').append(` <img class="emoticon" src="https://${location.host}/assets/others/mgh_17.png"> `);
+        if (i != links.length - 1) $('#marquee').append(` <img class="emoticon" src="https://${location.host}/assets/others/dot.png"> `);
     }
 
     if (mobileAndTabletCheck()) {
-        $('#background').replaceWith(`<div id="background" style="background-image: url(https://${location.host}/assets/others/mgh_17.png);"></div>`);
+        $('#background').replaceWith(`<div id="background" style="background-image: url(https://${location.host}/assets/others/dot.png);"></div>`);
 
         app.shouldIgnoreVideo = true;
     }
 
     app.titleChanger(['oh', 'hi', 'welcome <3']);
-    app.iconChanger(['https://' + location.host + '/assets/icons/roses/rose1.jpg', 'https://' + location.host + '/assets/icons/roses/rose2.jpg', 'https://' + location.host + '/assets/icons/roses/rose3.jpg', 'https://' + location.host + '/assets/icons/roses/rose4.jpg', 'https://' + location.host + '/assets/icons/roses/rose5.jpg', 'https://' + location.host + '/assets/icons/roses/rose6.jpg', 'https://' + location.host + '/assets/icons/roses/rose7.jpg', 'https://' + location.host + '/assets/icons/roses/rose8.jpg', 'https://' + location.host + '/assets/icons/roses/rose1.jpg']);
+    app.iconChanger(['https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png']);
 });
 
 if ($.cookie('videoTime')) {
