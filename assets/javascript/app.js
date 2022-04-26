@@ -1,5 +1,3 @@
-// made by shiro.bar -- fixed and modified by spin.tk
-
 class _app {
     id = 0;
     videoElement = null;
@@ -10,7 +8,7 @@ class _app {
     backgroundToggler = false;
     shouldIgnoreVideo = false;
     effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-    brandDescription = ['bot developer', 'coding random shit', 'welcome?', 'hie <3'];
+    brandDescription = ['oh', 'hi', 'welcome <3'];
 
     titleChanger = (text, delay) => {
         if (!text) return;

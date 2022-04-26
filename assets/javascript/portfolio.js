@@ -1,5 +1,3 @@
-// made by shiro.bar -- fixed and modified by spin.tk
-
 'use strict';
 
 const ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=a6f158e56097453e9fa056afda7a7aee';
@@ -10,16 +8,16 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 
 $(document).ready(() => {
     const links = [{
-            name: 'Discord Bot',
-            link: 'https://www.nuggetbot.xyz/',
+            name: 'Main Website',
+            link: 'https://dslvd.com/',
         },
         {
-            name: 'Spotify',
-            link: 'https://open.spotify.com/user/szl84p09ocnnkazocwgcwfdwr?si=4ad8b5084cf841de',
+            name: 'Instagram',
+            link: 'https://dslvd.xyz/instagram',
         },
         {
-          name: 'Github',
-          link: 'https://github.com/DinoNuggyChan',
+          name: 'Youtube',
+          link: 'https://dslvd.xyz/youtube',
         },
     ];
 
@@ -39,7 +37,7 @@ $(document).ready(() => {
         app.shouldIgnoreVideo = true;
     }
 
-    app.titleChanger(['bot developer', 'coding random shit', 'welcome?', 'hie <3']);
+    app.titleChanger(['oh', 'hi', 'welcome <3']);
     app.iconChanger(['https://' + location.host + '/assets/icons/roses/rose1.jpg', 'https://' + location.host + '/assets/icons/roses/rose2.jpg', 'https://' + location.host + '/assets/icons/roses/rose3.jpg', 'https://' + location.host + '/assets/icons/roses/rose4.jpg', 'https://' + location.host + '/assets/icons/roses/rose5.jpg', 'https://' + location.host + '/assets/icons/roses/rose6.jpg', 'https://' + location.host + '/assets/icons/roses/rose7.jpg', 'https://' + location.host + '/assets/icons/roses/rose8.jpg', 'https://' + location.host + '/assets/icons/roses/rose1.jpg']);
 });
 
@@ -74,7 +72,7 @@ $('html').on('contextmenu', (event) => {
     img.src = 'https://' + location.host + '/assets/others/trollface.jpg';
     img.width = 64;
     img.height = 64;
-    img.alt = 'nuggy.space';
+    img.alt = 'dslvd.xyz';
     img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
     img.className = `troll ${trollfaceLight}`;
 
@@ -126,12 +124,12 @@ $.getJSON(ipgeolocation, (data) => {
         const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
         const country = data.country_name ? data.country_name : 'your country';
 
-        writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome back, <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from ${country} here!`], 30, 500, () => {
+        writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome, <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from ${country} here!`], 30, 500, () => {
             if (app.skippedIntro) return;
 
             clearCursor();
 
-            writeLine([`<i style='color: #F62459'>dino nuggy ♡♡♡</i>`], 120, 500, () => {
+            writeLine([`<i style='color: #F62459'>dslvd ♡</i>`], 120, 500, () => {
                 timeouts.push(
                     setTimeout(() => {
                         if (app.skippedIntro) return;
