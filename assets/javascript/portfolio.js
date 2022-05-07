@@ -6,9 +6,9 @@ const timeouts = [];
 
 const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-/*$(document).ready(() => {
+$(document).ready(() => {
     const links = [{
-            name: 'Main Website',
+            name: 'Website',
             link: 'https://dslvd.com/',
         },
         {
@@ -39,7 +39,7 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 
     app.titleChanger(['oh', 'hi', 'welcome <3']);
     app.iconChanger(['https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png']);
-});*/
+});
 
 if ($.cookie('videoTime')) {
     app.videoElement.currentTime = $.cookie('videoTime');
@@ -114,7 +114,7 @@ const writeLine = (text, speed, timeout, callback) => {
 };
 
 $.getJSON(ipgeolocation, (data) => {
-    writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[unknown source]</span>..."], 30, () => {
+    writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[an unknown user]</span>..."], 30, () => {
         if (app.skippedIntro) return;
 
         clearCursor();
@@ -124,7 +124,7 @@ $.getJSON(ipgeolocation, (data) => {
         const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
         const country = data.country_name ? data.country_name : 'your country';
 
-        writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome, <i style='color: #0f0'>${ip}</i>! Looks like your from ${country}`], 30, 500, () => {
+        writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome, <i style='color: #0f0'>${ip}</i>! Looks like your from ${country} nice!`], 30, 500, () => {
             if (app.skippedIntro) return;
 
             clearCursor();
