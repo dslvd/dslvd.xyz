@@ -6,7 +6,7 @@ const timeouts = [];
 
 const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-$(document).ready(() => {
+/*$(document).ready(() => {
     const links = [{
             name: 'Main Website',
             link: 'https://dslvd.com/',
@@ -39,7 +39,7 @@ $(document).ready(() => {
 
     app.titleChanger(['oh', 'hi', 'welcome <3']);
     app.iconChanger(['https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png']);
-});
+});*/
 
 if ($.cookie('videoTime')) {
     app.videoElement.currentTime = $.cookie('videoTime');
@@ -124,12 +124,12 @@ $.getJSON(ipgeolocation, (data) => {
         const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
         const country = data.country_name ? data.country_name : 'your country';
 
-        writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome, <i style='color: #0f0'>${ip}</i>! By the way, it's nice to see someone from ${country} here!`], 30, 500, () => {
+        writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome, <i style='color: #0f0'>${ip}</i>! Looks like your from ${country}`], 30, 500, () => {
             if (app.skippedIntro) return;
 
             clearCursor();
 
-            writeLine([`<i style='color: #F62459'>dslvd ♡</i>`], 120, 500, () => {
+            writeLine([`<i style='color: #F62459'></i>`], 120, 500, () => {
                 timeouts.push(
                     setTimeout(() => {
                         if (app.skippedIntro) return;
@@ -144,7 +144,7 @@ $.getJSON(ipgeolocation, (data) => {
             });
         });
     });
-});
+}); 
 
 const skipIntro = () => {
     if (app.skippedIntro) return;
