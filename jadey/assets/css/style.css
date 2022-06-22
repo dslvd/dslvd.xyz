@@ -28,7 +28,7 @@ img {
   margin-right: auto;
   margin-top: 5%;
   height: auto;
-  max-width: 230px;
+  max-width: 150px;
 }
 
 .profile-name {
@@ -51,11 +51,11 @@ img {
 
 .links {
   text-align: center;
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 30px;
+  padding: 15px;
   border: 0.5px solid rgb(255, 255, 255);
   border-width: 1px;
-  width: 300px;
+  width: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
