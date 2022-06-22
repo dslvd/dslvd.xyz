@@ -1,5 +1,5 @@
 let config = {
-  "Title": "",
+  "Title": "Jadey - Socials",
   "Name": "Jadey 🦋",
   "Description": "",
   "links": [
