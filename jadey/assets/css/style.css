@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(-45deg, #e9d67f, #d3a155, #a6ff52, #85eb7c);
+  background: linear-gradient(-45deg, #285D34 , #296d39 , #2f916d , #013220);
   background-size: 600% 600%;
   animation: gradient 15s ease infinite;
 }
@@ -28,7 +28,7 @@ img {
   margin-right: auto;
   margin-top: 5%;
   height: auto;
-  max-width: 100px;
+  max-width: 230px;
 }
 
 .profile-name {

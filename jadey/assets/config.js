@@ -1,6 +1,6 @@
 let config = {
   "Title": "",
-  "Name": "",
+  "Name": "Jadey 🦋",
   "Description": "",
   "links": [
     {
@@ -11,6 +11,11 @@ let config = {
     {
       "Title": "Tiktok",
       "URL": "https://dslvd.xyz/jadey/tiktok",
+      "icon_classes": "fas fa-link",
+    },
+    {
+      "Title": "Facebook",
+      "URL": "https://dslvd.xyz/jadey/facebook",
       "icon_classes": "fas fa-link",
     },
   ]
