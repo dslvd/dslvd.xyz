@@ -8,7 +8,7 @@
 
 body {
   background-color: #FFFFFF;
-  background-image: url('swimcorgis.gif');
+  background-image: url('1.gif');
   background-position: 0 0;
   padding: 0;
   margin: 0;
@@ -33,7 +33,7 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 26px;
+  height: 30px;
 }
 
 #follow {
@@ -66,10 +66,11 @@ footer {
 }
 
 #mute {
-  height: 25px;
-  width: 25px;
+  height: 60px;
+  width: 60px;
   float: right;
-  margin-right: 11px;
+  margin-right: 20px;
+  margin-top: -70px;
   cursor: pointer;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -86,7 +87,7 @@ footer {
 }
 
 #banner2 a {
-  color: black;
+  color: rgb(170, 170, 170);
   text-decoration: none;
 }
 
@@ -99,7 +100,7 @@ footer {
 }
 
 #banner2 a:link, #banner2 a:visited {
-  color: black;
+  color: rgb(170, 170, 170);
 }
 
 #banner {
@@ -113,7 +114,7 @@ footer {
 }
 
 #banner a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -126,16 +127,16 @@ footer {
 }
 
 #banner a:link, #banner a:visited {
-  color: black; 
+  color: rgb(255, 255, 255); 
 }
 
 #follow a {
-  color: black;
+  color: rgb(170, 170, 170);
   text-decoration: none;
 }
 
 #follow a:link, #follow a:visited {
-  color: black;
+  color: rgb(170, 170, 170);
 }
 
 #follow a:hover, #follow a:active {

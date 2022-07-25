@@ -18,18 +18,15 @@
       </div>
       <a href="https://instagram.com/dslvdd" target="_blank">
         <div id="marquee">
-          <img src="corgiswimflip.gif" />
-          <img src="corgiswimflip.gif" />
-          <img src="corgiswimflip.gif" />
         </div>
       </a>
     <div id="player"></div>
     <div class="push"></div>
   </div>
   <footer>
-    <img src="unmute.svg" id="mute" onclick="toggleSound(this);">
+    <img src="unmute.png" id="mute" onclick="toggleSound(this);">
     <span id="follow">
-      <a href="https://instagram.com/dslvdd" target="_blank">site by @dslv, @sethdandridge</a>
+      <a href="https://instagram.com/dslvdd" target="_blank">site by @dslv</a>
       &nbsp;
       <a href="https://youtu.be/uNd5kvrGHjk" target="_blank">music by @Radio Hits Music</a>
     </span>
@@ -59,10 +56,10 @@
     function toggleSound(img) { 
       if (player.getPlayerState() == 1) { 
         player.pauseVideo(); 
-        img.src = "unmute.svg"; 
+        img.src = "unmute.png"; 
       } else { 
         player.playVideo(); 
-        img.src = "mute.svg"; 
+        img.src = "mute.png"; 
       } 
     }
 

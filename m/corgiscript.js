@@ -4,5 +4,5 @@ function bannershow() {
 function bannerhide() {
   document.getElementById("banner").style.visibility = "hidden";
 }
-setTimeout("bannershow()",1600);
-setTimeout("bannerhide()",2508);
+setTimeout("bannershow()",3000);
+setTimeout("bannerhide()",20000);
