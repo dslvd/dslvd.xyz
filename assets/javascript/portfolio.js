@@ -38,7 +38,7 @@ $(document).ready(() => {
     }
 
     app.titleChanger(['oh', 'hi', 'welcome <3']);
-    app.iconChanger(['https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png', 'https://' + location.host + '/assets/others/dot.png']);
+    app.iconChanger(['https://' + location.host + '/assets/others/d.png', 'https://' + location.host + '/assets/others/s.png', 'https://' + location.host + '/assets/others/l.png', 'https://' + location.host + '/assets/others/v.png', 'https://' + location.host + '/assets/others/d.png']);
 });
 
 if ($.cookie('videoTime')) {
@@ -114,22 +114,18 @@ const writeLine = (text, speed, timeout, callback) => {
 };
 
 $.getJSON(ipgeolocation, (data) => {
-    writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[an unknown user]</span>..."], 30, () => {
-        if (app.skippedIntro) return;
-
-        clearCursor();
 
         const usernames = ['user', 'dude'];
 
         const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
         const country = data.country_name ? data.country_name : 'your country';
 
-        writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome, <i style='color: #0f0'>${ip}</i>! Looks like your from ${country} nice!`], 30, 500, () => {
+        writeLine([`Hi, <i style='color: #3c2489'>${ip}</i> !`], 30, 500, () => {
             if (app.skippedIntro) return;
 
             clearCursor();
 
-            writeLine([`<i style='color: #F62459'></i>`], 120, 500, () => {
+            writeLine([`<i style='color: #F62459'></i>`], 1, 1, () => {
                 timeouts.push(
                     setTimeout(() => {
                         if (app.skippedIntro) return;
@@ -138,13 +134,12 @@ $.getJSON(ipgeolocation, (data) => {
 
                         setTimeout(() => {
                             skipIntro();
-                        }, 500);
+                        }, 100);
                     }, 1000)
                 );
             });
         });
     });
-}); 
 
 const skipIntro = () => {
     if (app.skippedIntro) return;

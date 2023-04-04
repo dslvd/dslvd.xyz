@@ -2,12 +2,12 @@ class _app {
     id = 0;
     videoElement = null;
     audioElement = null;
-    musicVolume = 0.12;
+    musicVolume = 0.6;
     musicFadeIn = 4000;
     skippedIntro = false;
     backgroundToggler = false;
     shouldIgnoreVideo = false;
-    effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
+    //effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
     brandDescription = ['oh', 'hi', 'welcome <3'];
 
     titleChanger = (text, delay) => {
