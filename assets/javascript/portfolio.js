@@ -120,7 +120,8 @@ $.getJSON(ipgeolocation, (data) => {
         const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
         const country = data.country_name ? data.country_name : 'your country';
 
-        writeLine([`Hi, <i style='color: #3c2489'>${ip}</i> !`], 30, 500, () => {
+        //writeLine([`Hi, <i style='color: #3c2489'>${ip}</i> !`], 30, 500, () => {
+         writeLine([`wsg <i style='color: #F62459'></i>`], 0, 0, () => {
             if (app.skippedIntro) return;
 
             clearCursor();
